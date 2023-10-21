@@ -120,17 +120,6 @@ for txxxtt in range (1000):
 	h='Mobile Safari/537.36'
 	ffg=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
 	ugen.append(ffg)
-for txoppt in range (1000):
-	a='Mozilla/5.0 (Linux; Android'
-	b=random.choice(['9','10','11','12','13','14','15'])
-	c='CPH1969 Build/RP1A.200720.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-	d=random.randrange(40,115)
-	e='0'
-	f=random.randrange(3000,6000)
-	g=random.randrange(20,250)
-	h='Mobile Safari/537.36[FBAN/EMA;FBLC/en_US;FBAV/344.0.0.10.83;]'
-	ffg=f'{a} {b}; {c}{d}.{e}.{f}.{g} {h}'
-	ugen.append(ffg)	
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""
 \x1b[38;5;46m █████  ██████   █████  ███████  █████  ████████ 
@@ -141,7 +130,7 @@ logo =("""
 \x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mDeveloper \033[1;31m● \x1b[38;5;46mArafat Hosan
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31m● \x1b[38;5;46mmArafat Hosan
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m0.7
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m0.8
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   ● \x1b[38;5;46mRandom Cloning
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    ● \x1b[38;5;46mfree
 \x1b[38;5;50m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆""")
